@@ -3,10 +3,51 @@
     --cor02:#A47E3B;
     --cor03: #BF9742;
     --cor04:#E6B325;
+    --cor-fundo: #ce9b106c;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    background-color: var(--cor04);
 }
+
+html, body {
+    background-color: var(--cor-fundo);
+    width: 85vw;
+    margin: 0px auto;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+/* inicio do header */
+header {
+    background-color: var(--cor01);
+}
+/* fim do header */
+
+/* inicio do main */
+main {
+    background-color: var(--cor02);
+}
+
+img {
+    width: 200px; height: 150px;
+}
+
+.gif {
+    backface-visibility: var(--cor01);
+}
+/* fim do main */
+
+/* inicio do footerr */
+footer {
+    background-color: var(--cor03);
+}
+/* fim do header */
